@@ -1,0 +1,101 @@
+@import "@/styles/shared.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+
+  label {
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  input,
+  .input,
+  select,
+  textarea {
+    background-color: white;
+    border: 2px black solid;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: inherit;
+    padding: 8px;
+    min-width: 280px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .descInput {
+    min-height: 20px;
+    height: 70px;
+  }
+
+  .giftNotesInput {
+    min-height: 20px;
+    height: 50px;
+  }
+
+  .budgetSpan {
+    width: 280px;
+    display: flex;
+  }
+  .budgetInput {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    width: 100%;
+    margin-left: 4px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .otherWhyInput {
+    min-height: 60px;
+  }
+  textarea {
+    font-size: 16px;
+    min-width: 280px;
+  }
+
+  option {
+    font-family: inherit;
+  }
+}
+
+.whoSpan {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: $breakpointMobile) {
+  .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+
+    input,
+    .input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 16px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    .budgetSpan {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

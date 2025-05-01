@@ -1,0 +1,32 @@
+@import "@/styles/shared.scss";
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  margin-top: 16px;
+
+  .ideaText {
+    font-weight: 600;
+  }
+
+  .amazonText {
+    text-decoration: underline;
+  }
+}
+
+.disclaimerText {
+  color: var(--disclaimer-color);
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.inAmazonContainer {
+  margin-bottom: 8px;
+}
+
+@media only screen and (max-width: $breakpointMobile) {
+  .title {
+    font-size: 18px;
+  }
+}

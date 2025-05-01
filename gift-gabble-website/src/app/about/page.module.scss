@@ -1,0 +1,21 @@
+@import "@/styles/shared.scss";
+
+.container {
+  h1 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+    &:not(:first-child) {
+      margin-top: 24px;
+    }
+  }
+
+  p {
+    margin-bottom: 8px;
+  }
+
+  ol {
+    padding-left: 16px;
+  }
+}

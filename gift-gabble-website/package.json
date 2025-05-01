@@ -1,0 +1,28 @@
+{
+  "name": "gift-finder-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.43.1",
+    "html-react-parser": "^5.1.10",
+    "next": "14.2.1",
+    "openai": "^4.33.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-star-ratings": "^2.3.0",
+    "sass": "^1.75.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-star-ratings": "^2.3.3",
+    "typescript": "^5"
+  }
+}
